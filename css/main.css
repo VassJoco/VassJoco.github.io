@@ -1,0 +1,100 @@
+/* Importing font*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,900');
+
+/* Variables */
+
+:root {
+    /* Colors */
+    --clr-main: #F6F1ED;
+    --clr-secondary: #50413C;
+    --clr-title: #30231D;
+    --clr-accent: #CC3914;
+
+    /* My Font Family*/
+    --ff: 'Merriweather';
+
+    /* Font Weight*/
+    --fw-normal: 400;
+    --fw-bold: 900;
+
+    /* Font Sizes*/
+    --fs-title: 3em;
+    --fs-cta: 3.8em;
+    --fs-warning: .75em;
+    --fs-header: 1.87em;
+    --fs-text: .9em;
+}
+
+/* General styling */
+
+*, *::before, *::after {
+    content: '';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs-text);
+    background-color: var(--clr-main);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hero section */
+
+.hero {
+    background: url(../img/hero-bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    height: 85vh;
+    position: relative;
+}
+
+.main-nav {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+.main-nav li a {
+    display: inline-block;
+    padding: 3px 6px;
+    color: var(--clr-main);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav li:not(:last-child) a {
+    border-right: 2px solid rgba(0,0,0, .25);
+}
+
+.main-nav li a:hover {
+    color: var(--clr-accent);
+}
+
+.logo img {
+    width: 25vw;
+    max-width: 350px;
+    min-width: 180px;
+    height: auto;
+    position: absolute;
+    top: 53%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.social-links{
+    display: none;
+}
+
+
+
