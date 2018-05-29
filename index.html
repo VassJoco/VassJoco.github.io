@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html">
         <meta name="author" content="Vass Jozsef">
         <meta name="description" content="Friss es finom ételek, Székelyudvarhely központjában.">
         <meta name="keywords" content="étel, kürtőskalács, hamburger, bejgli, kukorica, lángos, palacsinta, fagyi, friss, Székelyudvarhely, olcsó">
@@ -38,133 +37,136 @@
 
         <!--About section-->
         <section class="about">
-            <div class="col">
-                <img class="about__img" src="img/piros-bode.jpeg" alt="Egy kép a Piros Bódéról" width="525" height="435" >
-            </div>
-            <div class="col">
-                <h2 class="about__title">Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula. Vestibulum a ante a massa dapibus tincidunt. Nulla sit amet aliquet neque. Fusce quis felis ut risus convallis vestibulum</p>
-                <p>. Sed commodo sapien maximus felis commodo, id suscipit lectus gravida. </p>
-                <a href="" class="btn">Kövess Facebookon</a>
+            <div class="container flex__center">
+                <div class="col-50">
+                    <h2 class="title">Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tincidunt ligula. Vestibulum a ante a massa dapibus tincidunt. Nulla sit amet aliquet neque. Fusce quis felis ut risus convallis vestibulum.</p>
+                    <p>Sed commodo sapien maximus felis commodo, id suscipit lectus gravida. </p>
+                    <a href="#" class="btn">Kövess Facebookon</a>
+                </div>
+                <div class="col-50 order">
+                    <img class="about__img" src="img/piros-bode.jpeg" alt="Egy kép a Piros Bódéról" width="525" height="435" >
+                </div>
             </div>
         </section>
 
         <!-- Food section -->
-        <section class="food">
-            <h2 class="titel">Kürtőskalács</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Diós</li>
-                    <li>Cukros</li>
-                    <li>Fahéjas</li>
-                    <li>Kókuszos</li>
-                </ul>
-                <p class="food__weight">1000g</p>
-            </div>
-            <div class="col">
-                <img src="img/kurtos.png" alt="Kürtőskalács">
-            </div>
-            <h3 class="food__price">10 Ron</h3>
-        </section>
+        <section class="foods">
+            <div class="container flex__around">
+                <div class="col-50">
+                    <h2 class="food__title">Kürtőskalács</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Diós</li>
+                            <li>Cukros</li>
+                            <li>Fahéjas</li>
+                            <li>Kókuszos</li>
+                        </ul>
+                        <p class="food__weight">1000g</p>
+                    </div>
+                   
+                    <h3 class="food__price">10 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Lángos</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Tejfölös-sajtos</li>
-                    <li>Fokhagymás-tejfölös-sajtos</li>
-                    <li>Csokis</li>
-                    <li>Lekváros</li>
-                </ul>
-                <p class="food__weight">350g</p>
-            </div>
-            <div class="col">
-                <img src="img/langos.png" alt="Lángos">
-            </div>
-            <h3 class="food__price">5 Ron</h3>
-        </section>
+                <div class="col-50">
+                    <h2 class="food__title">Lángos</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Tejfölös-sajtos</li>
+                            <li>Fokhagymás-tejfölös-sajtos</li>
+                            <li>Csokis</li>
+                            <li>Lekváros</li>
+                        </ul>
+                        <p class="food__weight">350g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/langos.png" alt="Lángos">
+                    </div>
+                    <h3 class="food__price">5 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Székely-Hamburger</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Marhahúsból</li>
-                    <li>Csirkehúsból</li>
-                    <li>Vegetáriánus</li>
-                </ul>
-                <p class="food__weight">500g</p>
-            </div>
-            <div class="col">
-                <img src="img/hamburger.png" alt="Székely-Hamburger">
-            </div>
-            <h3 class="food__price">15 Ron</h3>
-        </section>
+                <div class="col-50">
+                    <h2 class="food__title">Székely-Hamburger</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Marhahúsból</li>
+                            <li>Csirkehúsból</li>
+                            <li>Vegetáriánus</li>
+                        </ul>
+                        <p class="food__weight">500g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/hamburger.png" alt="Székely-Hamburger">
+                    </div>
+                    <h3 class="food__price">15 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Fagylalt</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Vaniliás-eperöntettel</li>
-                    <li>Vaniliás-almásöntettel</li>
-                </ul>
-                <p class="warning">(csak szezonálisan kapható)</p>
-                <p class="food__weight">50g</p>
-            </div>
-            <div class="col">
-                <img src="img/fagyi.png" alt="Fagylalt">
-            </div>
-            <h3 class="food__price">4 Ron</h3>
-        </section>
+                <div class="col-50">
+                    <h2 class="food__title">Fagylalt</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Vaniliás-eperöntettel</li>
+                            <li>Vaniliás-almásöntettel</li>
+                        </ul>
+                        <p class="warning">(csak szezonálisan kapható)</p>
+                        <p class="food__weight">50g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/fagyi.png" alt="Fagylalt">
+                    </div>
+                    <h3 class="food__price">4 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Főtt-Kukorica</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Sima</li>
-                    <li>Sós</li>
-                </ul>
-                <p class="warning">(csak szezonálisan kapható)</p>
-                <p class="food__weight">100g</p>
-            </div>
-            <div class="col">
-                <img src="img/kukorica.png" alt="Főtt-Kukorica">
-            </div>
-            <h3 class="food__price">4 Ron</h3>
-        </section>
+                <div class="col-50">
+                    <h2 class="food__title">Főtt-Kukorica</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Sima</li>
+                            <li>Sós</li>
+                        </ul>
+                        <p class="warning">(csak szezonálisan kapható)</p>
+                        <p class="food__weight">100g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/kukorica.png" alt="Főtt-Kukorica">
+                    </div>
+                    <h3 class="food__price">4 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Bejgli</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Diós-mazsolás</li>
-                    <li>Mákos</li>
-                </ul>
-                <p class="warning">(csak rendelésre kapható)</p>
-                <p class="food__weight">500g</p>
-            </div>
-            <div class="col">
-                <img src="img/bejgli.png" alt="Bejgli">
-            </div>
-            <h3 class="food__price">15 Ron</h3>
-        </section>
+                <div class="col-50">
+                    <h2 class="food__title">Bejgli</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Diós-mazsolás</li>
+                            <li>Mákos</li>
+                        </ul>
+                        <p class="warning">(csak rendelésre kapható)</p>
+                        <p class="food__weight">500g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/bejgli.png" alt="Bejgli">
+                    </div>
+                    <h3 class="food__price">15 Ron</h3>
+                </div>
 
-        <section class="food">
-            <h2 class="titel">Palacsinta</h2>
-            <div class="col">
-                <ul class="food__type">
-                    <li>Lekváros</li>
-                    <li>Csokis</li>
-                    <li>Ordás</li>
-                </ul>
-                <p class="warning">(csak rendelésre kapható)</p>
-                <p class="food__weight">100g</p>
+                <div class="col-50">
+                    <h2 class="food__title">Palacsinta</h2>
+                    <div class="col">
+                        <ul class="food__type">
+                            <li>Lekváros</li>
+                            <li>Csokis</li>
+                            <li>Ordás</li>
+                        </ul>
+                        <p class="warning">(csak rendelésre kapható)</p>
+                        <p class="food__weight">100g</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/palacsinta.png" alt="Palacsinta">
+                    </div>
+                    <h3 class="food__price">5 Ron</h3>
+                </div>
             </div>
-            <div class="col">
-                <img src="img/palacsinta.png" alt="Palacsinta">
-            </div>
-            <h3 class="food__price">5 Ron</h3>
         </section>
-
         <!-- CTA section-->
         <section class="cta">
             <h2 class="title">Gyere és próbáld ki ételeinket</h2>
