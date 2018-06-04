@@ -1,31 +1,6 @@
 /* Importing font*/
 @import url('https://fonts.googleapis.com/css?family=Merriweather:200,400,400i,700,900');
 
-/* Variables */
-
-:root {
-    /* Colors */
-    --clr-main: #F6F1ED;
-    --clr-secondary: #50413C;
-    --clr-title: #30231D;
-    --clr-accent: #CC3914;
-
-    /* My Font Family*/
-    --ff: 'Merriweather';
-
-    /* Font Weight*/
-    --fw-light: 200;
-    --fw-normal: 400;
-    --fw-bold: 900;
-
-    /* Font Sizes*/
-    --fs-title: 2em;
-    --fs-food: 1.5em;
-    --fs-cta: 3em;
-    --fs-warning: .75em;
-    --fs-header: 1.87em;
-    --fs-text: .9em;
-}
 
 /* General styling */
 
@@ -155,6 +130,38 @@ body {
     border-radius: 10px;
 }
 
+/* Social icons */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #CC3914;
+    border-radius: 50%;
+    color: #F6F1ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #CC3914;
+    transition: transform 0.1s ease-in-out;
+    box-shadow: 0px 2px 10px rgba(0,0,0, .3)
+}
+
+.social-links li a:hover{
+    transform: scale(1.1);
+}
+
 /* Hero section */
 
 .hero {
@@ -206,6 +213,24 @@ body {
 
 .hero .social-links{
     display: none;
+}
+
+@media only screen and (min-width: 900px){
+    .hero .social-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .social-links li {
+        list-style-type: none;
+        margin: 0 0 10px;
+    }
+
+    .box {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
 }
 
 /*About section*/
@@ -364,6 +389,24 @@ body {
     color: #F6F1ED;
     text-align: center;
     font-size: .8rem;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 91%;
+    color: #F6F1ED;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 55px;
+    height: 40px;
+    background-color: #30231D;
+    line-height: 30px;
+    border-radius: 50%;
 }
 
 .footer .col-50 {
