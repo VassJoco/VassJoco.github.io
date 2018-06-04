@@ -91,7 +91,7 @@ body {
 /* Typography */
 
 .title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 900;
     color: #30231D;
 }
@@ -118,13 +118,18 @@ body {
     font-size: .8rem;
 }
 
-@media only screen and (min-width: 900px){
+.footer h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 700px){
     .food__title,
     .food__weight,
     .food__price {
         font-size: 1.5rem;
     }
-
+                                        /* difference because of the design*/
     .food__type {
         font-size: .9rem;
     }
@@ -306,12 +311,70 @@ body {
     
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
     .food__type {
         margin-left: 60px;
     }
-
+                                            /* difference because of the design*/
     .warning {
         margin-left: -30px;
     }
 }
+
+/* CTA section*/
+.cta {
+    text-align: center;
+    background-color: #CC3914;
+    padding: 50px 0;
+}
+
+.cta .title {
+    margin-bottom: 10px;
+    color: #F6F1ED;
+}
+
+.cta__btn {
+    color: #F6F1ED;
+    text-decoration: none;
+}
+
+.cta__btn:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .cta {
+         padding: 80px 0;
+    }
+
+    .cta .title {
+        font-size: 3rem;
+    }
+
+    .cta__btn {
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer section */
+.footer {
+    padding: 30px 0;
+    background-color: #30231D;
+    color: #F6F1ED;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.footer .col-50 {
+    margin-bottom: 30px;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer .social-links {
+    margin-top: 5px;
+}
+
