@@ -1,5 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://piros-bode.netlify.com/* http://www.pirosbode.hu/:splat 301!
-
-
-
